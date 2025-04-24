@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        margin-top: 24px;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <h1 class="title">Deserts</h1>
+        <!-- cards -->
+        <div class="cards">
+          <!-- card1 -->
+          <div class="card-1">
+            <div class="card-contaiter">
+              <img
+                src="./assets/images/image-waffle-desktop.jpg"
+                alt="Waffle"
+                class="Waffle"
+              />
+              <button class="Waffle-btn">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="" />Add to
+                Cart
+              </button>
+            </div>
+            <h3>Waffle</h3>
+            <p>Waffle with Berries</p>
+            <h4>$ 6.50</h4>
+          </div>
+          <!-- card2 -->
+          <div class="card-1">
+            <div class="card-contaiter">
+              <img
+                src="./assets/images/image-creme-brulee-desktop.jpg"
+                alt="Brûlée"
+                class="Waffle"
+              />
+              <button class="Waffle-btn">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="" />Add to
+                Cart
+              </button>
+            </div>
+            <h3>Crème Brûlée</h3>
+            <p>Vanilla Bean Crème Brûlée</p>
+            <h4>$ 7.00</h4>
+          </div>
+          <!-- card3 -->
+          <div class="card-1">
+            <div class="card-contaiter">
+              <img
+                src="./assets/images/image-macaron-desktop.jpg"
+                alt="Macaron"
+                class="Waffle"
+              />
+              <button class="Waffle-btn">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="" />Add to
+                Cart
+              </button>
+            </div>
+            <h3>Macaron</h3>
+            <p>Macaron Mix of Five</p>
+            <h4>$ 8.00</h4>
+          </div>
+          <!-- card4 -->
+          <div class="card-1">
+            <div class="card-contaiter">
+              <img
+                src="./assets/images/image-tiramisu-desktop.jpg"
+                alt="Tiramisu"
+                class="Waffle"
+              />
+              <button class="Waffle-btn">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="" />Add to
+                Cart
+              </button>
+            </div>
+            <h3>Tiramisu</h3>
+            <p>Classic Tiramisu</p>
+            <h4>$ 5.50</h4>
+          </div>
+          <!-- card5 -->
+          <div class="card-1">
+            <div class="card-contaiter">
+              <img
+                src="./assets/images/image-baklava-desktop.jpg"
+                alt="Baklava"
+                class="Waffle"
+              />
+              <button class="Waffle-btn">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="" />Add to
+                Cart
+              </button>
+            </div>
+            <h3>Baklava</h3>
+            <p>Pistachio Baklava</p>
+            <h4>$ 4.00</h4>
+          </div>
+          <!-- card6 -->
+          <div class="card-1">
+            <div class="card-contaiter">
+              <img
+                src="./assets/images/image-meringue-desktop.jpg"
+                alt="Pie"
+                class="Waffle"
+              />
+              <button class="Waffle-btn">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="" />Add to
+                Cart
+              </button>
+            </div>
+            <h3>Pie</h3>
+            <p>Lemon Meringue Pie</p>
+            <h4>$ 5.00</h4>
+          </div>
+          <!-- card7 -->
+          <div class="card-1">
+            <div class="card-contaiter">
+              <img
+                src="./assets/images/image-cake-desktop.jpg"
+                alt="Cake"
+                class="Waffle"
+              />
+              <button class="Waffle-btn">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="" />Add to
+                Cart
+              </button>
+            </div>
+            <h3>Cake</h3>
+            <p>Red Velvet Cake</p>
+            <h4>$ 4.50</h4>
+          </div>
+          <!-- card8 -->
+          <div class="card-1">
+            <div class="card-contaiter">
+              <img
+                src="./assets/images/image-brownie-desktop.jpg"
+                alt="Brownie"
+                class="Waffle"
+              />
+              <button class="Waffle-btn">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="" />Add to
+                Cart
+              </button>
+            </div>
+            <h3>Brownie</h3>
+            <p>Salted Caramel Brownie</p>
+            <h4>$ 4.50</h4>
+          </div>
+          <!-- card9 -->
+          <div class="card-1">
+            <div class="card-contaiter">
+              <img
+                src="./assets/images/image-panna-cotta-desktop.jpg"
+                alt="Panna"
+                class="Waffle"
+              />
+              <button class="Waffle-btn">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="" />Add to
+                Cart
+              </button>
+            </div>
+            <h3>Panna Cotta</h3>
+            <p>Vanilla Panna Cotta</p>
+            <h4>$ 6.50</h4>
+          </div>
+        </div>
+      </div>
+      <!-- empty cart -->
+      <div class="cart">
+        <h2>Your Cart (<span class="cart-count" id="cart-count">0</span>)</h2>
+        <div class="empty-cart" id="empty-cart">
+          <img
+            src="./assets/images/illustration-empty-cart.svg"
+            alt="empty-cart"
+          />
+          <p>Your cart is empty</p>
+        </div>
+        <ul id="cart-items"></ul>
+        <p id="cart-total" class="cart-total">total: $0.00</p>
+        <button id="confirm-order" class="confirm-order hidden">
+          Confirm Order
+        </button>
+      </div>
+    </div>
+
+    <div id="order-confirmed" class="hidden">
+      <div class="order-box">
+        <img
+          src="./assets/images/icon-order-confirmed.svg"
+          alt=""
+          class="checkmark"
+        />
+        <h2>Order Confirmed</h2>
+        <p class="subtitle">We hope you enjoy your food!</p>
+        <ul id="order-summary-list" class="order-summary-list">
+          <!-- it will fillout with JS -->
+        </ul>
+        <div id="order-total">
+          Order Total: <span id="order-total-amount">$0.00</span>
+        </div>
+        <button id="start-new-order" class="new-order-btn">
+          Start New Order
+        </button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Sara Piri</a>.
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
