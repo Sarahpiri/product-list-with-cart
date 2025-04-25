@@ -19,12 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
       .innerText.replace("$", "")
       .trim();
     const price = parseFloat(priceText);
-    const imageSrc = card.querySelector("img").src; // دریافت مسیر عکس
+    const imageSrc = card.querySelector("img").src;
 
     btn.addEventListener("click", () => {
       if (!cartItems[name]) {
-        cartItems[name] = { quantity: 1, price, imageSrc }; // اضافه کردن imageSrc
-        createCounter(btn, name);
+        cartItems[name] = { quantity: 1, price, imageSrc }; 
         updateCart();
       }
 
