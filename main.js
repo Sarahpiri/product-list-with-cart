@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     btn.addEventListener("click", () => {
       if (!cartItems[name]) {
-        cartItems[name] = { quantity: 1, price, imageSrc }; 
+        cartItems[name] = { quantity: 1, price, imageSrc };
+        createCounter(btn, name);
         updateCart();
       }
 
@@ -51,8 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const minusBtn = document.createElement("div");
         minusBtn.classList.add("minusBtn");
 
-        const plusBtn  = document.createElement("div");
-        plusBtn.classList.add("plusBtn")
+        const plusBtn = document.createElement("div");
+        plusBtn.classList.add("plusBtn");
 
         const countText = document.createElement("span");
         countText.textContent = cartItems[name].quantity;
@@ -76,8 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             btn.innerHTML = `<img src='./assets/images/icon-add-to-cart.svg' alt='' />Add to Cart`;
             btn.classList.remove("added");
-           
-            // remove boredre from picture 
+
+            // remove boredre from picture
             productImage.classList.remove("active-border");
             // add to cart back to default style
             const newBtn = btn.cloneNode(true);
