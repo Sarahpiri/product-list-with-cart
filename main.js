@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.classList.add("added");
 
         // handle minus btn
-        minus.addEventListener("click", () => {
+        minusBtn.addEventListener("click", () => {
           if (!cartItems[name]) return;
           cartItems[name].quantity--;
           const newQty = cartItems[name].quantity;
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         // handle plus btn
-        plus.addEventListener("click", (e) => {
+        plusBtn.addEventListener("click", (e) => {
           e.stopPropagation();
           cartItems[name].quantity++;
           countText.textContent = cartItems[name].quantity;
