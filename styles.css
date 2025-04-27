@@ -270,12 +270,14 @@ img {
   .Waffle-btn {
     width: 60%;
     position: absolute;
-    left: 100px;
+    /* left: 100px; */
+    left: 20%;
   }
   .Waffle-btn.added {
     position: absolute;
     bottom: -20px;
-    left: 100px;
+    /* left: 100px; */
+    left: 20%;
     background-color: chocolate;
     color: white;
     width: 60%;
@@ -286,17 +288,17 @@ img {
     align-items: center;
     justify-content: center;
   }
-  .cart{
+  .cart {
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  li{
+  li {
     gap: 50px;
   }
-  .cart-item-text{
+  .cart-item-text {
     color: black;
   }
 }
