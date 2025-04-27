@@ -5,6 +5,7 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 body {
   background-color: rgb(254, 238, 218);
   padding: 60px;
@@ -57,7 +58,13 @@ body {
   transition: 0.3s;
 }
 .Waffle-btn.added {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -20px;
   background-color: chocolate;
+  left: calc(50% - 80px);
   color: white;
   width: 60%;
   padding: 10px 20px;
@@ -85,6 +92,7 @@ body {
   display: flex;
   gap: 20px;
 }
+
 .main {
   display: flex;
   gap: 20px;
@@ -248,4 +256,47 @@ img {
 .counter-value {
   min-width: 20px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .Waffle-btn {
+    width: 60%;
+    position: absolute;
+    left: 100px;
+  }
+  .Waffle-btn.added {
+    position: absolute;
+    bottom: -20px;
+    left: 100px;
+    background-color: chocolate;
+    color: white;
+    width: 60%;
+    padding: 10px 20px;
+    display: flex;
+    gap: 40px;
+    border: 1px solid rgb(151, 76, 22);
+    align-items: center;
+    justify-content: center;
+  }
+  .cart{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  li{
+    gap: 50px;
+  }
+  .cart-item-text{
+    color: black;
+  }
 }

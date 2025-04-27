@@ -129,11 +129,21 @@ document.addEventListener("DOMContentLoaded", () => {
       const div = document.createElement("div");
       div.classList.add("remove-img");
 
+
+
       const removeImg = document.createElement("img");
       removeImg.src = "./assets/images/icon-remove-item.svg";
       removeImg.alt = "removeImg";
       removeImg.classList.add("remove-item");
 
+      document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('remove-item')) {
+          e.target.parentElement.remove();
+        }
+      });
+
+      
+      
       li.appendChild(removeImg);
       li.appendChild(div);
       li.appendChild(span);
