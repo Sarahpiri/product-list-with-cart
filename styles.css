@@ -297,8 +297,15 @@ img {
   }
   li {
     gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .cart-item-text {
     color: black;
   }
+ .remove-item{
+  width: 10px;
+  height: 10px;
+ }
 }
